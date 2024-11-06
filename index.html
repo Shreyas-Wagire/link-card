@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Profile Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background">
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <div class="profile-picture-container">
+                        <img src="/Profile.jpg" alt="Profile Picture" class="profile-picture">
+                    </div>
+                    <h2 class="name">Shreyas Wagire</h2>
+                    <p class="title">Programmer</p>
+                    <div class="skills">
+                        <span class="skill">HTML</span>
+                        <span class="skill">CSS</span>
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">React</span>
+                        <span class="skill">Node.js</span>
+                        <span class="skill">C++</span>
+                        <span class="skill">Python</span>
+                    </div>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-value">1+</span>
+                            <span class="stat-label">Years Exp</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">20+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">10+</span>
+                            <span class="stat-label">Clients</span>
+                        </div>
+                    </div>
+                    <button class="flip-button" onclick="flipCard()">View Links</button>
+                </div>
+                <div class="card-back">
+                    <h2>My Links</h2>
+                    <div class="links">
+                        <a href="https://shreyasport.vercel.app/" class="link" data-icon="🌐">Portfolio</a>
+                        <a href="https://www.linkedin.com/in/shreyas-wagire/" class="link" data-icon="💼">LinkedIn</a>
+                        <a href="https://github.com/ShreyasCyber" class="link" data-icon="🐙">GitHub</a>
+                        <a href="https://leetcode.com/u/Shreyas_Wagire/" class="link" data-icon="👨🏻‍💻">Leetcode</a>
+                        <a href="mailto:shreyaswagire07sw@gmail.com" class="link" data-icon="📧">Email</a>
+                        <a href="https://www.hackerrank.com/profile/shreyaswagire071" class="link" data-icon="📝">HackerRank</a>
+                    </div>
+                    <button class="flip-button" onclick="flipCard()">Back to Profile</button>
+                </div>
+            </div>
+        </div>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+            <span class="theme-toggle-icon">🌓</span>
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
